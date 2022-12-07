@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .grass, .sky, .road{
+    position: relative;
+  }
+  
+  .sky{
+    height: 40%;
+    background: rgb(137, 212, 241);
+  }
+  
+  .grass{
+    height: 30%;
+    background: rgb(27, 170, 218);
+  }
+  .road{
+    height: 30%;
+    background: tan;
+    box-sizing: border-box;
+    width: 100%;
+}
+.yacht{
+    position: absolute;
+    top:-48px;
+    left:0px;
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+  }
+  .capybara{
+    width: 512px;
+    height: 308px;
+  }
+  @keyframes drive{
+    from{transform: translateX(-200px)}
+    to{transform: translateX(2000px)}
+  }
